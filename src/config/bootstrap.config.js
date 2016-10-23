@@ -2,26 +2,13 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   styleLoader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader'),
-  // scripts: {
-  //   transition: true,
-  //   alert: true,
-  //   button: true,
-  //   carousel: true,
-  //   collapse: true,
-  //   dropdown: true,
-  //   modal: true,
-  //   tooltip: true,
-  //   popover: true,
-  //   scrollspy: true,
-  //   tab: true,
-  //   affix: true
-  // },
+  scripts: {
+    transition: true
+  },
   styles: {
     mixins: true,
-
     normalize: true,
     // print: true,
-
     // scaffolding: true,
     type: true,
     code: true,
@@ -29,7 +16,6 @@ module.exports = {
     // tables: true,
     // forms: true,
     // buttons: true,
-
     'component-animations': true,
     // glyphicons: false,
     // dropdowns: true,
