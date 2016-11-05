@@ -4,9 +4,16 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-const Banner = require('./components/Banner/Banner');
+const TodoBox = require('./components/TodoBox/TodoBox');
+const Remark = require('./components/Remark/Remark');
 
 ReactDOM.render(
-  <Banner />,
-  document.querySelector('#banner')
+  <TodoBox />,
+  document.getElementById('container')
 );
+
+ReactDOM.render(
+  <Remark />,
+  document.getElementById('container')
+);
+
